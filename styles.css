@@ -1,0 +1,133 @@
+* {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(224, 224, 224);
+    color:rgb(65, 65, 65);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+.library {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.book {
+    margin: 10px 10px;
+    padding: 10px 10px;
+    background-color: rgb(209, 209, 209);
+    border: 1px solid gray;
+    width: 25vw;
+    min-width: 140px;
+    max-width: 250px;
+    max-height: max-content;
+    word-wrap: break-word;
+}
+
+.book > * {
+    margin-top: 10px;
+    background-color: rgb(209, 209, 209);
+}
+
+.book-button {
+    padding: 5px 10px;
+    border: 1px solid gray;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s all;
+    margin: 0px 5px;
+}
+
+.delete-button {
+    background-color: rgb(221, 179, 179);
+}
+
+.delete-button:hover {
+    background-color: rgb(201, 132, 132);
+}
+
+.read {
+    background-color: rgb(191, 221, 179);
+}
+
+.not-read {
+    background-color: rgb(220, 221, 179);
+}
+
+.read:hover {
+    background-color: rgb(148, 194, 130);
+}
+
+.not-read:hover {
+    background-color: rgb(190, 194, 130);
+}
+
+.input {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    margin-top: 50vh;
+    align-items: center;
+    margin-bottom: 50px;
+    background-color: rgb(192, 192, 192);
+    padding: 20px;
+    border: 1px solid gray;
+}
+
+.input-elements {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(192, 192, 192);
+}
+
+input {
+    width: 80vw;
+    max-width: 500px;
+    height: 26px;
+    border: 1px solid gray;
+    
+}
+
+input::placeholder {
+    padding: 0.5rem;
+  }
+
+.input-elements > * {
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: 600;
+    background-color: rgb(192, 192, 192);
+}
+
+.add-button {
+    padding: 10px 15px;
+    background-color: rgb(209, 209, 209);
+    border: 1px solid gray;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.new-book {
+    padding: 10px 15px;
+    background-color: rgb(209, 209, 209);
+    border: 1px solid gray;
+    cursor: pointer;
+    margin-bottom: 40px;
+    transition: 0.5s all;
+}
+
+.add-button:hover, .new-book:hover {
+    background-color: rgb(190, 189, 189);
+}
